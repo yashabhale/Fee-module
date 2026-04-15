@@ -1,0 +1,32 @@
+.main-layout {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #e7f3ed;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout-content {
+  margin-left: 240px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.main-layout-body {
+  flex: 1;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-layout-content {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+  }
+}
